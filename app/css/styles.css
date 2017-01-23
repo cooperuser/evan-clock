@@ -10,10 +10,11 @@ body {
 }
 
 #pre-clock {
+
 }
 
 #clock {
-
+	font-size: 36px;
 }
 
 #post-clock {
