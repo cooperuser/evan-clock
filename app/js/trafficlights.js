@@ -16,7 +16,13 @@ document.write(
 					pointer-events: none;
 					height: 25px;
 					width: 100%;
-					z-index: 3000
+					z-index: 3000;
+					-webkit-touch-callout: none;
+					-webkit-user-select: none;
+					-khtml-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
 				}
 				.titlebar button {
 					-webkit-app-region: no-drag

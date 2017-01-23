@@ -1,7 +1,7 @@
 {
   "name": "evan-clock",
   "productName": "Evan Clock",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "main.js",
   "dependencies": {
     "electron": "latest"
