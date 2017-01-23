@@ -1,10 +1,14 @@
-let css = "https://raw.githubusercontent.com/cooper-anderson/evan-clock/master/app/css/styles.css";
+let css = "https://raw.githubusercontent.com/cooper-anderson/evan-clock/master/app/css/styles.css", electron;
+
+if (typeof __dirname != "undefined") {
+	electron = require("electron");
+	addDefaultTrafficLights(electron);
+}
 
 if (location.search != "") {
 	css = location.search.split('=')[1];
 }
 
-//$("head").append(`<link rel="stylesheet" type="text/css" href="${css}">`);
 $.ajax({
 	url: css,
 	success:function(data){
@@ -24,12 +28,12 @@ function pluralize(value, singular, plural) {
 }
 
 function centerText() {
-	$("body").css({
+	$(".main").css({
 		"position" : "absolute",
 		"left" : "50%",
 		"top" : "50%",
-		"margin-left" : -$("body").width()/2,
-		"margin-top" : -$("body").height()/2
+		"margin-left" : -$(".main").width()/2,
+		"margin-top" : -$(".main").height()/2
 	});
 }
 
