@@ -7,6 +7,13 @@ body {
 	font-family: Hasklig;
 	font-size: 24px;
 	color: #e0e0e0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
 }
 
 #pre-clock {
