@@ -1,0 +1,12 @@
+{
+  "name": "evan-clock",
+  "productName": "Evan Clock",
+  "version": "0.1.0",
+  "main": "app/js/main.js",
+  "dependencies": {
+    "electron": "latest"
+  },
+  "scripts": {
+    "start": "/Applications/Electron.app/Contents/MacOS/Electron ./"
+  }
+}
